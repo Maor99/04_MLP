@@ -31,6 +31,9 @@ class MLP:
         
         return activation  
 
+    def relu(self, x):
+        return np.maximum(0, x) 
+    
     def sigmoid (self,x):
         return 1 / (1 + np.exp(-x))
     
